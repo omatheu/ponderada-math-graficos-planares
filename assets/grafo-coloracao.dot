@@ -1,0 +1,45 @@
+graph G {
+  graph [
+    layout=neato,
+    bgcolor="white",
+    outputorder=edgesfirst,
+    splines=true,
+    overlap=false,
+    pad=0.25
+  ];
+
+  node [
+    shape=circle,
+    style="filled",
+    color="#1f2937",
+    fontname="Helvetica",
+    fontsize=18,
+    width=0.62,
+    height=0.62,
+    fixedsize=true
+  ];
+
+  edge [
+    color="#475569",
+    penwidth=2
+  ];
+
+  A [pos="0,300!", fillcolor="#93c5fd"];
+  B [pos="-180,0!", fillcolor="#fca5a5"];
+  C [pos="180,0!", fillcolor="#86efac"];
+  D [pos="0,125!", fillcolor="#fde68a"];
+  E [pos="-70,45!", fillcolor="#93c5fd"];
+  F [pos="70,45!", fillcolor="#fca5a5"];
+
+  A -- B;
+  A -- C;
+  A -- D;
+  B -- C;
+  B -- D;
+  B -- E;
+  C -- D;
+  C -- F;
+  D -- E;
+  D -- F;
+  E -- F;
+}
